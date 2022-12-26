@@ -22,14 +22,10 @@ app.use(cookieSession({
 
 
 app.get('/', ifNotLoggedin, (req,res,next) => {
-    dbConnection.execute("SELECT `name` FROM `users` WHERE `id`=?",[req.session.userID])
-    .then(([rows]) => {
-        res.render('home',{
-            name:rows[0].name
+        res.render('register',{
         });
     });
     
-});
 
 app.post('/register', ifLoggedin, 
 // post data validation(using express-validator)
