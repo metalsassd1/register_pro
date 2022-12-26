@@ -8,7 +8,7 @@ const {ifLoggedin,ifNotLoggedin} = require('./middleware/middleware');
 const {cookiekeys,cookiemaxAge,cookiename,port} = require('./config/constain');
 const app = express();
 
-
+app.use(express.json());
 app.use(express.urlencoded({ extended:false }));
 
 app.set('views', path.join(__dirname, 'views'))
