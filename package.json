@@ -2,9 +2,9 @@
   "name": "registe_team",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
-    "dev": "nodemon app.js"
+    "dev": "nodemon app.js",
+      "start": "node index.js"
   },
   "keywords": [],
   "author": "",
