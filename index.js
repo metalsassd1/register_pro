@@ -22,7 +22,7 @@ app.use(cookieSession({
 
 
 app.get('/', ifNotLoggedin, (req,res,next) => {
-        res.render('index',{
+        res.render('register',{
         });
     });
     
